@@ -1,0 +1,207 @@
+<div className={props.openDrawer}>
+      <i className='bx bx-x' id="btn" onClick={props.toggleDrawer}></i>
+      <div className={props.openForm}>
+     <form autoComplete="off" onSubmit={handleSubmit}>
+          <div className="user-details">
+            <div className="input-box">
+              <span className="details">Nome</span>
+              <input type="text" name="name" value={fields.name} onChange={handleFieldsChange} placeholder="Insira o nome" />
+            </div>
+            <div className="input-box">
+              <span className="details">Data de nascimento</span>
+              <input type="date" name="nasc" value={fields.nasc} onChange={handleFieldsChange} />
+            </div>
+            <div className="input-box">
+              <span className="details">Email</span>
+              <input type="text" name="email" value={fields.email} onChange={handleFieldsChange} placeholder="Insira o email" />
+            </div>
+            <div className="input-box">
+              <span className="details">Telefone</span>
+              <input type="text" name="phone" value={fields.phone} onChange={handleFieldsChange} placeholder="Insira o telefone" />
+            </div>
+            <div className="input-box">
+              <span className="details">Profissão</span>
+              <input type="text" name="profession" value={fields.profession} onChange={handleFieldsChange} placeholder="Insira a profissão" />
+            </div>
+            <div className="input-box">
+              <span className="details">Atendido por:</span>
+              <input type="text" name="attendance" value={fields.attendance} onChange={handleFieldsChange} placeholder="Insira o atendente" />
+            </div>
+            <div className="input-box" id="input-tratament">
+              <span className="details">Tratamento Proposto:</span>
+              <textarea name="tratament" id="tratament" value={fields.tratament} onChange={handleFieldsChange} />
+            </div>
+          </div>
+          <div className="gender-details">
+            <input type="radio" name="gender" value="Masculino" onChange={handleFieldsChange} id="dot-1"/>
+            <input type="radio" name="gender" value="Feminino" onChange={handleFieldsChange} id="dot-2"/>
+            <span className="gender-title">Genero</span>
+            <div className="category">
+              <label for="dot-1">
+              <span className="dot one"></span>
+              <span className="gender">Masculino</span>
+            </label>
+            <label for="dot-2">
+              <span className="dot two"></span>
+              <span className="gender">Feminino</span>
+            </label>
+            </div>
+          </div>
+          <div className="button">
+            <input type="submit" value="Confirmar"/>
+          </div>
+        </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+.drawer{
+    position: fixed;
+    padding-left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0px;
+    background: rgb(255, 255, 255);
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+.drawer.open{
+    width: 500px;
+    background: black;
+    padding: 6px 14px;
+}
+
+.drawer #btn{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #fff;
+  }
+  .drawer.open #btn{
+    display: flex;
+    text-align: right;
+  }
+
+.content-drawer{
+    display: flex;
+    margin-top: 10px;
+    color: white;
+}
+
+.content-drawer.close{
+    display: none;
+}
+  
+.content-drawer form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+  form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+  }
+  form .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0 ;
+    justify-content: flex-start;
+  }
+  form .category label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+  }
+  form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+  #dot-1:checked ~ .category label .one,
+  #dot-2:checked ~ .category label .two,
+  #dot-3:checked ~ .category label .three{
+    background: #1E96C8;
+    border-color: #d9d9d9;
+  }
+  form input[type="radio"]{
+    display: none;
+  }
+  form .button{
+    height: 45px;
+    margin: 35px 0
+  }
+  form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #1E96C8
+  }
+  form .button input:hover{
+  /* transform: scale(0.99); */
+  background: #2fc1ff
+  }
+
+
+
+
+  <div class="input-box" id="atendiment">
+                  <span className="details">Data do atendimento</span>
+                  <input type="date" name="dateAtendiment" value={fields.dateAtendiment} onChange={handleFieldsChange} placeholder="Enter your " />
+                </div>
+                <div className="input-box">
+                  <span className="details">Observações:</span>
+                  <textarea name="observations" value={fields.observations} onChange={handleFieldsChange} id="observations-top" />
+                </div>
