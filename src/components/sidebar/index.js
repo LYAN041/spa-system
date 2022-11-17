@@ -87,15 +87,6 @@ const Sidebar = () => {
          <span className="tooltip">Funcionários</span>
        </li>
        <li>
-          <Link to='/escala'>
-         <div className='a'>
-         <i className='bx bx-calendar-week'></i>
-           <span className="links_name">Escala</span>
-         </div>
-         </Link>
-         <span className="tooltip">Escala</span>
-       </li>
-       <li>
           <Link to='/financeiro'>
          <div className='a'>
          <i className='bx bx-bar-chart'></i>
