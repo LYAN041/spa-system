@@ -14,6 +14,15 @@ const Sidebar = () => {
       setOpenBar("sidebar")
     }
   }
+
+  const redirectFinance = () => {
+    window.location.href = "https://6377bfeb1645e00d118bef4b--musical-macaron-8fd4bc.netlify.app/";
+  };
+
+  const redirectTodoList = () => {
+    window.location.href = "https://musical-alpaca-8347e5.netlify.app/";
+  };
+  
     return (
       <React.Fragment>
       <div className={openBar}>
@@ -51,8 +60,8 @@ const Sidebar = () => {
          <span className="tooltip">Agendamentos</span>
        </li>
        <li>
-          <Link to='/planejamento'>
-         <div className='a'>
+          <Link>
+         <div className='a' onClick={redirectTodoList}>
          <i className='bx bx-current-location'></i>
            <span className="links_name">Planejamento</span>
          </div>
@@ -87,8 +96,8 @@ const Sidebar = () => {
          <span className="tooltip">Funcionários</span>
        </li>
        <li>
-          <Link to='/financeiro'>
-         <div className='a'>
+          <Link>
+         <div className='a' onClick={redirectFinance}>
          <i className='bx bx-bar-chart'></i>
            <span className="links_name">Financeiro</span>
          </div>

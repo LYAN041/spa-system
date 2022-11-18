@@ -14,7 +14,7 @@ const TableBody = (props) => {
         <td>{formated}</td>
         <td>{props.service}</td>
         <td>{props.phone}</td>
-        <i className='bx bx-trash' id="trash" onClick={function remove() { props.removeItems(props.id) } }></i>
+        <td><i className='bx bx-trash' id="trash" onClick={function remove() { props.removeItems(props.id) } }></i></td>
         </tr> 
     )
 }

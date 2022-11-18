@@ -53,10 +53,10 @@ const FormAgenda = (props) => {
                     </div>
 
                     <div className="btns-agenda">
-                        <div class="button-side">
+                        <div className="button-side">
                             <input type="submit" value="Confirmar" />
                         </div>
-                        <div class="button-side-cancel">
+                        <div className="button-side-cancel">
                             <input type="button" value="Cancelar" onClick={props.toggleDrawer} />
                         </div>
                     </div>

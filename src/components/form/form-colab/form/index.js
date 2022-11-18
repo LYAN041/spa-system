@@ -74,7 +74,7 @@ const Form = (props) => {
                 <div class="button-side">
                   <input type="submit" value="Confirmar" />
                 </div>
-                <div class="button-side-cancel">
+                <div className="button-side-cancel">
                   <input type="button" value="Cancelar" onClick={props.toggleDrawer} />
                 </div>
               </div>

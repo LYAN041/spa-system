@@ -5,7 +5,6 @@ import Sidebar from "./components/sidebar";
 import Home from "./screens/home/home";
 import Agendamentos from "./screens/agendamentos";
 import Clientes from "./screens/clientes";
-import Escala from "./screens/escala";
 import Financeiro from "./screens/financeiro";
 import Funcionarios from "./screens/funcionarios";
 import Materiais from "./screens/materiais";
@@ -24,7 +23,6 @@ const Rotas = () => {
             <Route path='/' element={<Home/>} />
             <Route path='/agendamentos' element={<Agendamentos/>} />
             <Route path='/clientes' element={<Clientes/>} />
-            <Route path='/escala' element={<Escala/>} />
             <Route path='/financeiro' element={<Financeiro/>} />
             <Route path='/funcionarios' element={<Funcionarios/>} />
             <Route path='/materiais' element={<Materiais/>} />

@@ -46,7 +46,7 @@ const Form = (props) => {
             </div>
             <div className="input-box">
               <span className="details">Data de nascimento</span>
-              <input type="date" name="nasc" value={fields.nasc} onChange={handleFieldsChange} />
+              <input type="date" name="nasc" value={fields.nasc} onChange={handleFieldsChange} required/>
             </div>
             <div className="input-box">
               <span className="details">Email</span>
@@ -76,11 +76,11 @@ const Form = (props) => {
             <input type="radio" name="gender" value="Feminino" onChange={handleFieldsChange} id="dot-2"/>
             <span className="gender-title">Sexo</span>
             <div className="category">
-              <label for="dot-1">
+              <label htmlFor="dot-1">
               <span className="dot one"></span>
               <span className="gender">Masculino</span>
             </label>
-            <label for="dot-2">
+            <label htmlFor="dot-2">
               <span className="dot two"></span>
               <span className="gender">Feminino</span>
             </label>
@@ -92,10 +92,10 @@ const Form = (props) => {
           </div>
 
           <div className="btns-side">
-                <div class="button-side">
+                <div className="button-side">
                   <input type="submit" value="Confirmar" />
                 </div>
-                <div class="button-side-cancel">
+                <div className="button-side-cancel">
                   <input type="button" value="Cancelar" onClick={props.toggleDrawer} />
                 </div>
               </div>

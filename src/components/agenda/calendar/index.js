@@ -16,13 +16,14 @@ const Calendario = (props) => {
     };
     
     return(
-        <div className='calendar'>
+        <div class='calendar'>
             <Calendar
                 localizer={localizer}
                 events={props.events}
                 popup
                 onSelectEvent={handleEventSelection}
-                defaultView = 'agenda'
+                defaultView = 'month'
+                views={{ month: true, agenda: true }}
                 style={{ height: 600 }}
             />
         </div>

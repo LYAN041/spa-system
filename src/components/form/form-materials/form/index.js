@@ -48,15 +48,15 @@ const Form = (props) => {
             </div>
             <div className="input-box">
               <span className="details">Validade</span>
-              <input type="date" name="validity" value={fields.validity} onChange={handleFieldsChange} />
+              <input type="date" name="validity" value={fields.validity} onChange={handleFieldsChange} required/>
             </div>
             <div className="input-box">
               <span className="details">Data da última compra</span>
-              <input type="date" name="lastpurchase" value={fields.lastpurchase} onChange={handleFieldsChange}/>
+              <input type="date" name="lastpurchase" value={fields.lastpurchase} onChange={handleFieldsChange} required/>
             </div>
             <div className="input-box">
               <span className="details">Data da próxima compra</span>
-              <input type="date" name="nextpurchase" value={fields.nextpurchase} onChange={handleFieldsChange} />
+              <input type="date" name="nextpurchase" value={fields.nextpurchase} onChange={handleFieldsChange} required/>
             </div>
             <div className="input-box">
             <span className="details">Categoria</span>
@@ -73,10 +73,10 @@ const Form = (props) => {
           </div>
           
           <div className="btns-side">
-                <div class="button-side">
+                <div className="button-side">
                   <input type="submit" value="Confirmar" />
                 </div>
-                <div class="button-side-cancel">
+                <div className="button-side-cancel">
                   <input type="button" value="Cancelar" onClick={props.toggleDrawer} />
                 </div>
               </div>

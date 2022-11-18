@@ -100,33 +100,33 @@ const FormEdit = (props) => {
       </div>
 
       <div className={props.formTop}>
-        <div class="container-top">
-          <div class="title-top">Editar cliente</div>
-          <div class="content-top">
+        <div className="container-top">
+          <div className="title-top">Editar cliente</div>
+          <div className="content-top">
             <form onSubmit={handleSubmitTop} className="formulario-top" autoComplete="off">
-              <div class="user-details-top">
-                <div class="input-box-top">
-                  <span class="details-top">Nome</span>
+              <div className="user-details-top">
+                <div className="input-box-top">
+                  <span className="details-top">Nome</span>
                   <input type="text" name="name" value={fieldsTop.name} onChange={handleFieldsChangeTop} placeholder="Ex: maria da silva" />
                 </div>
-                <div class="input-box-top">
-                  <span class="details-top">Data de nascimento</span>
+                <div className="input-box-top">
+                  <span className="details-top">Data de nascimento</span>
                   <input type="date" name="nasc" value={fieldsTop.nasc} onChange={handleFieldsChangeTop} placeholder="Enter your " />
                 </div>
-                <div class="input-box-top">
-                  <span class="details-top">Email</span>
+                <div className="input-box-top">
+                  <span className="details-top">Email</span>
                   <input type="text" name="email" value={fieldsTop.email} onChange={handleFieldsChangeTop} placeholder="Ex: teste@gmail.com" />
                 </div>
-                <div class="input-box-top">
-                  <span class="details-top">Profissão</span>
+                <div className="input-box-top">
+                  <span className="details-top">Profissão</span>
                   <input type="text" name="profession" value={fieldsTop.profession} onChange={handleFieldsChangeTop} placeholder="Ex: enfermeira" />
                 </div>
-                <div class="input-box-top">
-                  <span class="details-top">Telefone</span>
+                <div className="input-box-top">
+                  <span className="details-top">Telefone</span>
                   <input type="number" name="phone" value={fieldsTop.phone} onChange={handleFieldsChangeTop} placeholder="Ex: 41 99999-9999" />
                 </div>
-                <div class="input-box-top">
-                  <span class="details-top">Atendido por:</span>
+                <div className="input-box-top">
+                  <span className="details-top">Atendido por:</span>
                   <input type="text" name="attendance" value={fieldsTop.attendance} onChange={handleFieldsChangeTop} placeholder="Ex: nicole" />
                 </div>
                 <div className="input-box-top">
@@ -136,8 +136,8 @@ const FormEdit = (props) => {
                 <div className="input-box-top">
                   <span className="details-top"></span>
                 </div>
-                <div class="input-box-top">
-                  <span class="details-top">Data do atendimento</span>
+                <div className="input-box-top">
+                  <span className="details-top">Data do atendimento</span>
                   <input type="date" name="dateAtendiment" value={fieldsTop.dateAtendiment} onChange={handleFieldsChangeTop} placeholder="Enter your " />
                 </div>
                 <div className="input-box-top">
@@ -146,10 +146,10 @@ const FormEdit = (props) => {
                 </div>
               </div>
               <div className="btns-top">
-                <div class="button-top">
+                <div className="button-top">
                   <input type="submit" value="Confirmar" />
                 </div>
-                <div class="button-top-cancel">
+                <div className="button-top-cancel">
                   <input type="button" value="Cancelar" onClick={props.toggleTop} />
                 </div>
               </div>

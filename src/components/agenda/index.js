@@ -47,9 +47,9 @@ const Agenda = () => {
 
     return(
         <React.Fragment>
-            <div className="content-agenda">
-                <h2 className="title-form">Agendamentos</h2>
-                <button className="button-43" onClick={toggleDrawer}>+ Adicionar</button>
+            <div class="content-agenda">
+                <h2 class="title-form">Agendamentos</h2>
+                <button class="button-43" onClick={toggleDrawer}>+ Adicionar</button>
             </div>
             <FormAgenda 
             addAgenda={addAgenda}

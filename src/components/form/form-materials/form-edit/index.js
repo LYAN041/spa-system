@@ -33,22 +33,22 @@ const FormEditProduct = (props) => {
             </div>
             <div className="input-box">
               <span className="details">Validade</span>
-              <input type="date" name="validity" value={fieldsProducts.validity} onChange={handlefieldsProductsChange} />
+              <input type="date" name="validity" value={fieldsProducts.validity} onChange={handlefieldsProductsChange} required/>
             </div>
             <div className="input-box">
               <span className="details">Data da última compra</span>
-              <input type="date" name="lastpurchase" value={fieldsProducts.lastpurchase} onChange={handlefieldsProductsChange}/>
+              <input type="date" name="lastpurchase" value={fieldsProducts.lastpurchase} onChange={handlefieldsProductsChange} required/>
             </div>
             <div className="input-box">
               <span className="details">Data da próxima compra</span>
-              <input type="date" name="nextpurchase" value={fieldsProducts.nextpurchase} onChange={handlefieldsProductsChange} />
+              <input type="date" name="nextpurchase" value={fieldsProducts.nextpurchase} onChange={handlefieldsProductsChange} required/>
             </div>
           </div>
           <div className="btns-side">
-         <div class="button-side">
+         <div className="button-side">
            <input type="submit" value="Confirmar" />
          </div>
-         <div class="button-side-cancel">
+         <div className="button-side-cancel">
            <input type="button" value="Cancelar" onClick={props.toggleProduct} />
          </div>
        </div>

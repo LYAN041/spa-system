@@ -17,8 +17,8 @@ const TableBody = (props) => {
         <td>{formatedvalidity}</td>
         <td>{formatedlast}</td>
         <td>{formatednext}</td>
-        <i className='bx bx-edit' id="edit" onClick={function edit() { props.productToEdit(props.id) } }></i>
-        <i className='bx bx-trash' id="trash" onClick={function remove() { props.removeItems(props.id) } }></i>
+        <td><i className='bx bx-edit' id="edit" onClick={function edit() { props.productToEdit(props.id) } }></i></td>
+        <td><i className='bx bx-trash' id="trash" onClick={function remove() { props.removeItems(props.id) } }></i></td>
         </tr> 
     )
 }

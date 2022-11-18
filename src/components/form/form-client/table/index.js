@@ -3,8 +3,8 @@ import TableBody from "../tableBody";
 const Table = (props) => {
 
     const list = props.list;
-    const listItems = list.map((item) =>
-       <th>{item}</th> 
+    const listItems = list.map((item, index) =>
+       <th key={index}>{item}</th> 
     );
 
     return(
@@ -16,6 +16,7 @@ const Table = (props) => {
           {props.data.map((person) =>
 
             <TableBody
+             key={person.id}
              id={person.id}
              name={person.name === '' ? '-' : person.name}
              phone={person.phone === '' ? '-' : person.phone}

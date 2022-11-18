@@ -3,8 +3,8 @@ import TableBody from "../table-body";
 const Table = (props) => {
 
     const list = props.list;
-    const listItems = list.map((item) =>
-       <th>{item}</th> 
+    const listItems = list.map((item, index) =>
+       <th key={index}>{item}</th> 
     );
 
     return(
@@ -15,6 +15,7 @@ const Table = (props) => {
         <tbody>
           {props.data.map((item) =>
             <TableBody
+             key={item.id}
              id={item.id}
              service={item.service}
              type={item.type}
