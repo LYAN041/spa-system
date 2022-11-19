@@ -1,6 +1,7 @@
 const TableBody = (props) => {
 
     const date = new Date(props.date);
+    date.setDate(date.getDate() + 1)
     const formated = (new Intl.DateTimeFormat('pt-br')).format(date);
 
     

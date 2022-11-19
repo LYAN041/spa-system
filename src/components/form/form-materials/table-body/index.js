@@ -1,11 +1,15 @@
 const TableBody = (props) => {
+
     const datelast = new Date(props.lastpurchase);
+    datelast.setDate(datelast.getDate() + 1)
     const formatedlast = (new Intl.DateTimeFormat('pt-br')).format(datelast);
 
     const datenext = new Date(props.nextpurchase);
+    datenext.setDate(datenext.getDate() + 1)
     const formatednext = (new Intl.DateTimeFormat('pt-br')).format(datenext);
 
     const datevalidity = new Date(props.validity);
+    datevalidity.setDate(datevalidity.getDate() + 1)
     const formatedvalidity = (new Intl.DateTimeFormat('pt-br')).format(datevalidity);
 
     return(
