@@ -37,6 +37,7 @@ const FormEdit = (props) => {
     );
 
     const date = new Date(props.nasc);
+    date.setDate(date.getDate() + 1)
     const formated = (new Intl.DateTimeFormat('pt-br')).format(date);
 
 

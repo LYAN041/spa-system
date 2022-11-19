@@ -16,7 +16,7 @@ const Sidebar = () => {
   }
 
   const redirectFinance = () => {
-    window.location.href = "https://6377bfeb1645e00d118bef4b--musical-macaron-8fd4bc.netlify.app/";
+    window.location.href = "https://musical-macaron-8fd4bc.netlify.app/";
   };
 
   const redirectTodoList = () => {
